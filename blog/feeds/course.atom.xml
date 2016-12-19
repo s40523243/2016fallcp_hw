@@ -131,7 +131,43 @@ h = 25
 background(50, 100, w, h, 5, 19, ctx)
 &lt;/script&gt;
 
-&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>W14 Brython 練習</title><link href="./w14-brython-lian-xi.html" rel="alternate"></link><published>2016-12-12T12:00:00+08:00</published><updated>2016-12-12T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-12:./w14-brython-lian-xi.html</id><summary type="html">&lt;p&gt;第十四週開始練習&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-14:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython繪圖&lt;/p&gt;
+&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>W14 Brython 練習</title><link href="./w14-brython-lian-xi.html" rel="alternate"></link><published>2016-12-12T12:00:00+08:00</published><updated>2016-12-12T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-12:./w14-brython-lian-xi.html</id><summary type="html">&lt;p&gt;第十四週開始練習&lt;/p&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;div id="ex1"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+container = doc['ex1']
+
+container &lt;= "W14 練習"
+&lt;/script&gt;
+
+&lt;div id="ex2"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+container = doc['ex2']
+mystring = input("要印出甚麼字串?")
+mynum = input("要印幾次?")
+
+for i in range(int(mynum)):
+    #container &lt;= "W14 練習-2" + html.BR()
+    container &lt;= mystring + html.BR()
+&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-14:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython繪圖&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程,導入程式庫,啟動,然後引用各種模組開始繪圖&lt;/p&gt;
