@@ -7,7 +7,8 @@ print結果會展示在網頁主控台,&amp;lt;"con"&amp;gt;標定在document&lt
 &lt;p&gt;猜數字遊戲,當使用者未輸入預期的資料我們用try跟except,用random來限定你要的範圍if和else內寫的程式來判定,錯了給提示一直猜到對&lt;/p&gt;
 &lt;p&gt;W15週心得與程式範例:
 從 Leo Editor把 @edit @path @button 的用法到 pelican 轉 .md 檔案成為 blog 網誌 然後加入 Brython 程式導入與執行的方法&lt;/p&gt;
-&lt;p&gt;@settings-&amp;gt;設定節點 @edit-&amp;gt;增新節點 @button-&amp;gt;按鈕 移動節點 ctrl + u (upper) 向上 ctrl+d 向下 ctrl+l 向左 ctrl+i 新增內容 ctrl+B是執行 crtl+r向右移動或是將現在變成點取的檔案上面的子節點&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T14:30:00+08:00</published><updated>2016-12-26T14:30:00+08:00</updated><author><name>40523243</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;@settings-&amp;gt;設定節點 @edit-&amp;gt;增新節點 @button-&amp;gt;按鈕 移動節點 ctrl + u (upper) 向上 ctrl+d 向下 ctrl+l 向左 ctrl+i 新增內容 ctrl+B是執行 crtl+r向右移動或是將現在變成點取的檔案上面的子節點&lt;/p&gt;
+&lt;p&gt;看完影片覺得這是一個前所未接觸的東西,值得學習&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T14:30:00+08:00</published><updated>2016-12-26T14:30:00+08:00</updated><author><name>40523243</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
