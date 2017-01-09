@@ -168,18 +168,18 @@
 <v t="leo.20161121151505.1"><vh>@edit 20161121.md</vh></v>
 <v t="leo.20161212140137.1"><vh>@edit 20161205.md</vh></v>
 <v t="leo.20161212141550.1"><vh>@edit 20161212.md</vh></v>
-<v t="leo.20161226131816.1"><vh>@edit 20161219.md</vh></v>
-<v t="leo.20161226140228.1"><vh>@edit 20161226.md</vh></v>
+<v t="leo.20170109115937.1"><vh>@edit 20161219.md</vh></v>
+<v t="leo.20170109120025.1"><vh>@edit 20161226.md</vh></v>
 </v>
 </v>
 </v>
-<v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
-<v t="yen.20161022111056.1"><vh>@button https server</vh></v>
-<v t="amd.20160106094754.1"><vh>@path ./../content/pages</vh>
+<v t="amd.20160106094754.1" a="E"><vh>@path ./../content/pages</vh>
 <v t="amd.20160106094829.1" a="E"><vh>yen 所寫的 pages 文章</vh>
 <v t="amd.20160106094844.1"><vh>@edit pages_1.md</vh></v>
 </v>
 </v>
+<v t="amd.20161004202833.1"><vh>@edit ../README.md</vh></v>
+<v t="yen.20161022111056.1"><vh>@button https server</vh></v>
 <v t="yen.20161022151749.1"><vh>產生 .key 與 .crt</vh></v>
 </vnodes>
 <tnodes>

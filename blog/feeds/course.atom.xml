@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2016-12-26T12:00:00+08:00</updated><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T12:00:00+08:00</published><updated>2016-12-26T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;p&gt;w16&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2016-12-26T12:00:00+08:00</updated><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T12:00:00+08:00</published><updated>2016-12-26T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;p&gt;W16 &lt;/p&gt;
+
+
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" 
@@ -16,10 +18,10 @@ brython(1);
 
 &lt;!-- 以下實際利用  Brython 畫圖 --&gt;
 
-&lt;div id="con"&gt;&lt;/div&gt;
+&lt;div id="ex1"&gt;&lt;/div&gt;
 
 &lt;script type="text/python3"&gt;
-from browser import alert
+form browser import alert
 form browser import document
 form browser import html
 import random
@@ -28,69 +30,52 @@ import random
 con1 = document["con"]
 #1. 利用亂數模組產生標準答案
 標準答案 = random.randint(1,100)
+#2. 取得使用者所猜的整數 (可以使用 try except )
+#con1 &lt;= str(標準答案)
 
-#2. 取得使用者所猜的整數(可以使用try except防止輸入非整數)
-#3. 根據使用者與標準答案比大小,並且回應顯示字串
-'''4. 假如利用while迴圈,可以在使用者沒有猜對之前繼續輸入
 '''
-con1 &lt;=str(標準答案)
 try:
     for i in range(1):
-    #con1 &lt;= "test" + "&lt;br/&gt;"
-    yourInput=int(input("請輸入一個整數!"))
-    #con1 &lt;= "test" +html.BR()
-    output = yourInput + 1
-    con1 &lt;= "你輸入的整數加上1之後,為" +str(output)
+        #con1 &lt;= "test" + "&lt;br/&gt;"
+        yourInpot = int(input("請輸入一個整數！"))
+        #con1 &lt;= "test" + html.BR()
+        output = yourInput + 1
+        con1 &lt;= "你輸入的整數加上 1 之後 , 為" + str(output)
 except:
-    con1 &lt;= "拜託請輸入整數!"   
+    con1 &lt;= "請輸入整數！"
 '''
+
 def b1(e):
     alert("click")
 document["b1"].bind("click",b1)
 &lt;/script&gt;
 
-&lt;p&gt;&lt;button id = "b1&gt;玩數字遊戲&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>聖誕節聖誕快樂</title><link href="./sheng-dan-jie-sheng-dan-kuai-le.html" rel="alternate"></link><published>2016-12-19T12:00:00+08:00</published><updated>2016-12-19T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-19:./sheng-dan-jie-sheng-dan-kuai-le.html</id><summary type="html">&lt;p&gt;聖誕快樂w15&lt;/p&gt;
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
+&lt;p&gt;&lt;button id = "b1"&gt;玩猜數字遊戲&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W15</title><link href="./w15.html" rel="alternate"></link><published>2016-12-19T12:00:00+08:00</published><updated>2016-12-19T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-19:./w15.html</id><summary type="html">&lt;p&gt;W15&lt;/p&gt;
+&lt;h3&gt;cpa_w14-1 教學影片重點 : &lt;/h3&gt;
 
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;div id="con"&gt;&lt;/div&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document as do
-from browser import html
-c = do["con"]
-def compa(e):
-    your_input = input("請輸入一個整數!")
-    # 如何判斷所輸入的整數比 10 大
-    try:
-        if int(your_input) &gt; 10:
-            c &lt;= "所輸入的整數:" + your_input + "比 10 大" + html.BR()
-        else:
-            c &lt;= "所輸入的整數:" + your_input + "比 10 小" + html.BR()
-    except:
-        c &lt;= "請輸入整數!!" + html.BR()
-
-#print("test")
-'''
-for i in range(5):
-    c &lt;= "test" + html.BR()
-'''
-do["b1"].bind("click", compa)
-&lt;/script&gt;
-
-&lt;p&gt;&lt;button id="b1"&gt;compa&lt;/button&gt;&lt;/p&gt;
-&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W13 Brython 繪圖範例</title><link href="./w13-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-12T12:00:00+08:00</published><updated>2016-12-12T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-12:./w13-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;h4&gt;&lt;strong&gt;Q: leo 檔案 &amp;amp; setting 節點用法?&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4&gt;A: 結合複製指令，選擇一個或多個物件同步進行相同指令。&lt;/h4&gt;
+&lt;br&gt;
+&lt;h4&gt;&lt;strong&gt;Q: 如何複製或搬運 leo 節點? 有哪些快捷鍵? &lt;/strong&gt;&lt;/h4&gt;
+&lt;li&gt;Ctrl + i = 新增節點
+&lt;li&gt;Ctrl + u = 節點上移
+&lt;li&gt;Ctrl + d = 節點下移
+&lt;li&gt;Ctrl + l = 節點左移
+&lt;li&gt;Ctrl + r = 節點右移
+&lt;br&gt;
+&lt;h4&gt;&lt;strong&gt;Q: @path 節點指令用法&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4&gt;A: 可在節點指令後註記標題，表示節點的路徑關係。&lt;/h4&gt;
+&lt;br&gt;
+&lt;h4&gt;&lt;strong&gt;Q: @edit &amp;amp; @auto節點指令用法&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4&gt;A: 兩者皆為導入外部檔案"標題指令"，建立起Leo內部與外部檔案的關係。&lt;/h4&gt;
+&lt;h4&gt;不同的地方在於 @edit 讀取內容不會自動分割節點，而 @auto 會自動分割節點。&lt;/h4&gt;
+&lt;br&gt;
+&lt;h4&gt;&lt;strong&gt;Q: @others 節點指令用法&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4&gt;A: 此節點下屬所有子節點的內容，當 @other 改變位置時，所對應的子節點也相應移位。&lt;/h4&gt;
+&lt;br&gt;
+&lt;h4&gt;&lt;strong&gt;＊可利用節點將雜亂的程式碼分割成數個子節點，針對各別修改需求尋找子節點。&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4&gt;&lt;strong&gt;＊節點標題與程式碼內容互不影響。&lt;/strong&gt;&lt;/h4&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W13 Brython 繪圖範例</title><link href="./w13-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-12-12T12:00:00+08:00</published><updated>2016-12-12T12:00:00+08:00</updated><author><name>s40523243</name></author><id>tag:,2016-12-12:./w13-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
